@@ -1,5 +1,5 @@
 import unittest
-from controlls.controll import TaxaBmg, TaxaCaixa
+from controlls.taxas import TaxaBmg, TaxaCaixa
 
 class TestClass03(unittest.TestCase):
     def test_taxa_bmg(self):
