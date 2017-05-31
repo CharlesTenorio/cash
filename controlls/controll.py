@@ -33,6 +33,59 @@ class TaxaItau(TaxatEmprestimo):
         taxa = valor_emprestimo/100 * percentual
         return taxa
 
+class Bradesco(TaxatEmprestimo):
+
+    def calcular_taxa(self, valor_emprestimo, percentual):
+        taxa = valor_emprestimo/100 * percentual
+        return taxa
+
+class TaxaBomSucesso(TaxatEmprestimo):
+
+    def calcular_taxa(self, valor_emprestimo, percentual):
+        taxa = valor_emprestimo/100 * percentual
+        return taxa
+
+class TaxaMercantil(TaxatEmprestimo):
+
+    def calcular_taxa(self, valor_emprestimo, percentual):
+        taxa = valor_emprestimo/100 * percentual
+        return taxa
+
+class TaxaDaycoval(TaxatEmprestimo):
+
+    def calcular_taxa(self, valor_emprestimo, percentual):
+        taxa = valor_emprestimo/100 * percentual
+        return taxa
+
+class TaxaMatone(TaxatEmprestimo):
+
+    def calcular_taxa(self, valor_emprestimo, percentual):
+        taxa = valor_emprestimo/100 * percentual
+        return taxa
+
+class TaxaBgnCartao(TaxatEmprestimo):
+
+    def calcular_taxa(self, valor_emprestimo, percentual):
+        taxa = valor_emprestimo/100 * percentual
+        return taxa
+
+class TaxaPanCartao(TaxatEmprestimo):
+
+    def calcular_taxa(self, valor_emprestimo, percentual):
+        taxa = valor_emprestimo/100 * percentual
+        return taxa
+
+class TaxaSafra(TaxatEmprestimo):
+
+    def calcular_taxa(self, valor_emprestimo, percentual):
+        taxa = valor_emprestimo/100 * percentual
+        return taxa
+
+class TaxaSafraCartao(TaxatEmprestimo):
+
+    def calcular_taxa(self, valor_emprestimo, percentual):
+        taxa = valor_emprestimo/100 * percentual
+        return taxa
 
 
 
