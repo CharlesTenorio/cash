@@ -1,86 +1,145 @@
-class TaxatEmprestimo:
-   def calcular_taxa(self, valor_emprestimo, percentual):
+class _TaxaEmprestimo():
+
+   def __init__(self, valor_emprestimo, percentual):
+       self.valor_emprestimo = valor_emprestimo
+       self.percentual = percentual
+
+def calcular_taxa(self):
        raise NotImplementedError('Exception raised, ImageFinder is supposed to be an interface / abstract class!')
 
 
-class TaxaBmg(TaxatEmprestimo):
+class _TaxaBmg(_TaxaEmprestimo):
 
-    def calcular_taxa(self, valor_emprestimo, percentual):
+    def calcular_taxa(self):
         taxa = 0
-        if valor_emprestimo > 0 and percentual > 0 :
-           taxa = valor_emprestimo/100 * percentual
+        if self.valor_emprestimo > 0 and self.percentual > 0 :
+           taxa = self.valor_emprestimo/100 * self.percentual
 
         return taxa
 
-class TaxaCaixa(TaxatEmprestimo):
+class _TaxaCaixa(_TaxaEmprestimo):
 
-    def calcular_taxa(self, valor_emprestimo, percentual):
+    def calcular_taxa(self):
+        taxa = 0
+        if self.valor_emprestimo > 0 and self.percentual > 0:
+            taxa = self.valor_emprestimo / 100 * self.percentual
 
-        taxa = valor_emprestimo/100 * percentual
-        return  taxa
-
-class TaxaPan(TaxatEmprestimo):
-
-    def calcular_taxa(self, valor_emprestimo, percentual):
-        taxa = valor_emprestimo/100 * percentual
         return taxa
 
-class TaxaItau(TaxatEmprestimo):
+class _TaxaPan(_TaxaEmprestimo):
 
-    def calcular_taxa(self, valor_emprestimo, percentual):
-        taxa = valor_emprestimo/100 * percentual
+    def calcular_taxa(self):
+        taxa = 0
+        if self.valor_emprestimo > 0 and self.percentual > 0:
+            taxa = self.valor_emprestimo / 100 * self.percentual
+
         return taxa
 
-class Bradesco(TaxatEmprestimo):
+class _TaxaItau(_TaxaEmprestimo):
 
-    def calcular_taxa(self, valor_emprestimo, percentual):
-        taxa = valor_emprestimo/100 * percentual
+    def calcular_taxa(self):
+        taxa = 0
+        if self.valor_emprestimo > 0 and self.percentual > 0:
+            taxa = self.valor_emprestimo / 100 * self.percentual
+
         return taxa
 
-class TaxaBomSucesso(TaxatEmprestimo):
+class _TaxaBradesco(_TaxaEmprestimo):
 
-    def calcular_taxa(self, valor_emprestimo, percentual):
-        taxa = valor_emprestimo/100 * percentual
+    def calcular_taxa(self):
+        taxa = 0
+        if self.valor_emprestimo > 0 and self.percentual > 0:
+            taxa = self.valor_emprestimo / 100 * self.percentual
+
         return taxa
 
-class TaxaMercantil(TaxatEmprestimo):
+class _TaxaBomSucesso(_TaxaEmprestimo):
 
-    def calcular_taxa(self, valor_emprestimo, percentual):
-        taxa = valor_emprestimo/100 * percentual
+    def calcular_taxa(self):
+        taxa = 0
+        if self.valor_emprestimo > 0 and self.percentual > 0:
+            taxa = self.valor_emprestimo / 100 * self.percentual
+
         return taxa
 
-class TaxaDaycoval(TaxatEmprestimo):
+class _TaxaMercantil(_TaxaEmprestimo):
 
-    def calcular_taxa(self, valor_emprestimo, percentual):
-        taxa = valor_emprestimo/100 * percentual
+    def calcular_taxa(self):
+        taxa = 0
+        if self.valor_emprestimo > 0 and self.percentual > 0:
+            taxa = self.valor_emprestimo / 100 * self.percentual
+
         return taxa
 
-class TaxaMatone(TaxatEmprestimo):
+class _TaxaDaycoval(_TaxaEmprestimo):
 
-    def calcular_taxa(self, valor_emprestimo, percentual):
-        taxa = valor_emprestimo/100 * percentual
+    def calcular_taxa(self):
+        taxa = 0
+        if self.valor_emprestimo > 0 and self.percentual > 0:
+            taxa = self.valor_emprestimo / 100 * self.percentual
+
+        return taxa
+class _TaxaMatone(_TaxaEmprestimo):
+
+    def calcular_taxa(self):
+        taxa = 0
+        if self.valor_emprestimo > 0 and self.percentual > 0:
+            taxa = self.valor_emprestimo / 100 * self.percentual
+
+        return taxa
+class _TaxaBgnCartao(_TaxaEmprestimo):
+
+    def calcular_taxa(self):
+        taxa = 0
+        if self.valor_emprestimo > 0 and self.percentual > 0:
+            taxa = self.valor_emprestimo / 100 * self.percentual
+
         return taxa
 
-class TaxaBgnCartao(TaxatEmprestimo):
+class _TaxaPanCartao(_TaxaEmprestimo):
 
-    def calcular_taxa(self, valor_emprestimo, percentual):
-        taxa = valor_emprestimo/100 * percentual
+    def calcular_taxa(self):
+        taxa = 0
+        if self.valor_emprestimo > 0 and self.percentual > 0:
+            taxa = self.valor_emprestimo / 100 * self.percentual
+
         return taxa
 
-class TaxaPanCartao(TaxatEmprestimo):
+class _TaxaSafra(_TaxaEmprestimo):
 
-    def calcular_taxa(self, valor_emprestimo, percentual):
-        taxa = valor_emprestimo/100 * percentual
+    def calcular_taxa(self):
+        taxa = 0
+        if self.valor_emprestimo > 0 and self.percentual > 0:
+            taxa = self.valor_emprestimo / 100 * self.percentual
+
+        return taxa
+class _TaxaSafraCartao(_TaxaEmprestimo):
+
+    def calcular_taxa(self):
+        taxa = 0
+        if self.valor_emprestimo > 0 and self.percentual > 0:
+            taxa = self.valor_emprestimo / 100 * self.percentual
+
         return taxa
 
-class TaxaSafra(TaxatEmprestimo):
+class _TaxaBB(_TaxaEmprestimo):
+    def calcular_taxa(self):
+        taxa = 0
+        if self.valor_emprestimo > 0 and self.percentual > 0:
+            taxa = self.valor_emprestimo / 100 * self.percentual
 
-    def calcular_taxa(self, valor_emprestimo, percentual):
-        taxa = valor_emprestimo/100 * percentual
         return taxa
 
-class TaxaSafraCartao(TaxatEmprestimo):
+OPCOES_TAXAS = [_TaxaBB, _TaxaBgnCartao, _TaxaBmg, _TaxaBomSucesso, _TaxaBradesco, _TaxaCaixa, _TaxaDaycoval,
+                _TaxaItau, _TaxaMatone, _TaxaMercantil, _TaxaPan, _TaxaPanCartao, _TaxaSafra, _TaxaSafraCartao
 
-    def calcular_taxa(self, valor_emprestimo, percentual):
-        taxa = valor_emprestimo/100 * percentual
-        return taxa
+                ]
+class CalcMelhorTaxa:
+     def __init__(self, taxa):
+        self.taxa = taxa
+
+
+     def calcular(self):
+         opcao_taxa = OPCOES_TAXAS[self.taxa]
+         opcao = opcao_taxa()
+         return opcao.calcular_taxa()
